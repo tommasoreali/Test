@@ -16,8 +16,16 @@ typeof(typeof)
 typeof(list())
 ```
 
-defines sets with associated operations. R or Z (integer number in mathematics). Types is the computer representation of this. everything is a double except if you . Characters:sequence of letters. Closure is a specific type for functions: don't excpext to be able to sum the functions between them for example.
 
+
+defines sets with associated operations. R or Z (integer number in mathematics). Types is the computer representation of this. everything is a double except if you . Characters:sequence of letters. Closure is a specific type for functions: don't excpext to be able to sum the functions between them for example. Most of those types have a hardware version on the CPU, It is what is give to you from the programming language There are differenece but we don't care. 
+
+
+### Classes
+classes in Python or R is the way to create your own type. 
 ```{r}
-
+data(iris)
+typeof(iris)
+class(iris)
 ```
+
