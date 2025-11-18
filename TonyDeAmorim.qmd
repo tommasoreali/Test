@@ -5,6 +5,7 @@ format: html
 ---
 
 ## Types and classes
+### Types
 
 ```{r}
 typeof(1.5)
@@ -17,5 +18,17 @@ typeof(typeof)
 typeof(list())
 ```
 
+### Classes
 
+```{r}
+
+data(iris)
+typeof(iris)
+class(iris)
+
+class(1L)
+
+```
+
+Most of the types have a hardware version (not for advanced ones like list). Classes are a way to create types as a developer.  
 
