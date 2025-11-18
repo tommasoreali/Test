@@ -105,3 +105,58 @@ x
 y
 ```
 
+Indexing is made with vectors of any lenght.
+```{r}
+x
+x[c(2,2,1,4,3)]
+```
+```{r}
+x[0] #no way I could understand it 
+x[7] #novalue
+x[10] #no value
+```
+```{r}
+typeof(numeric(0))
+length(numeric(0))
+```
+```{r}
+typeof(NA)
+length(NA)
+```
+```{r}
+typeof(NA_integer_)
+NA_integer_
+```
+```{r}
+x
+x[c(4,1,0,15)]
+```
+```{r}
+c(numeric(0),5,numeric(0))
+```
+Either all positive or all negative values in the vector
+```{r}
+x
+x[c(-1,-4)]
+```
+
+
+Logical indexing 
+```{r}
+y <- c("A", "B","C")
+y
+y[c(TRUE, FALSE,TRUE)]
+```
+```{r}
+x
+x[c(1,4)] <- c(-34,42)
+x
+x[c(2,10)] <- c(123,78)
+x
+```
+```{r}
+y <- c("A", "B", "C")
+y
+y[c(TRUE, FALSE, TRUE)]
+```
+
