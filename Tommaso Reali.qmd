@@ -28,4 +28,38 @@ data(iris)
 typeof(iris)
 class(iris)
 ```
+## Vectors
+Many things in R are vectors (and most of the other things are lists).
+
+A vector is a collection of values of the same type (possibly a single value).
+
+```{r}
+x <- 15.25
+length(x) ##all vectors have a lenght 
+x[1]
+typeof(length(x))
+length(length(x))
+```
+## creation function 
+c function can be seen as a creation function or, more accurately as a vector concatenation function
+```{r}
+y <- c(1, -2, 56, 1.7, -1e-10)
+y
+typeof(y)
+y[2]
+length(y)
+```
+## merging vect y and x
+```{r}
+c(x,y)
+```
+
+### Character vectors
+
+This is not R strenght...
+
+```{r}
+z <- "Aice Bompard"
+length(z)
+```
 
