@@ -40,6 +40,7 @@ x[1]
 typeof(length(x))
 length(length(x))
 ```
+
 ## creation function 
 c function can be seen as a creation function or, more accurately as a vector concatenation function
 ```{r}
@@ -158,5 +159,75 @@ x
 y <- c("A", "B", "C")
 y
 y[c(TRUE, FALSE, TRUE)]
+```
+##Lists
+Vectors must betype uniform, which will trigger a conversion to character in many cases.
+
+```{r}
+broken <- c(1L, 1.5, "toto(c'est moi excellent)", FALSE)
+broken 
+typeof(broken)
+            
+```
+Lists do not have this limitation
+
+### Creating a list
+
+```{r}
+
+bar <- list(1L, 1.5, "toto", FALSE)
+bar
+```
+```{r}
+typeof(bar)
+length(bar)
+```
+```{r}
+foo <- list(c(1,2,3), TRUE, length)
+foo
+length(foo)
+```
+
+### Indexing 
+
+```{r}
+foo
+foo[1]
+foo[-2]
+foo[c(3,2,2,1)]
+```
+```{r}
+foo[0]
+```
+
+### Side step: weird values
+```{r}
+NA ## missing value
+NULL ## missing object
+NaN ## Not a number
+```
+```{r}
+0/0
+1/0
+-1/0
+1/0-1/0
+```
+```{r}
+NA_real_ +1
+1/NA_real_
+```
+```{r}
+NULL + 1
+```
+### Back ro indexing lists
+
+```{r}
+x <- list(c(1,2,3), c(TRUE,FALSE), LETTERS[10:15])
+
+```
+
+
+```{r}
+x[5] <- 
 ```
 

@@ -109,6 +109,45 @@ hidalgo[c(TRUE,FALSE,TRUE)]
 
 ```
 
+Logical indexing 
+```{r}
+y <- c("A", "B","C")
+y
+y[c(TRUE, FALSE,TRUE)]
+```
 
+```{r}
+x
+x[c(1,4)] <- c(-34,42)
+x
+x[c(2,10)] <- c(123,78)
+x
+```
+
+```{r}
+y <- c("A", "B", "C")
+y
+y[c(TRUE, FALSE, TRUE)]
+```
+
+
+##Lists
+Vectors must betype uniform, which will trigger a conversion to character in many cases.
+
+```{r}
+broken <- c(1L, 1.5, "toto(c'est moi excellent)", FALSE)
+broken 
+typeof(broken)
+            
+```
+Lists do not have this limitation
+
+### Creating a list
+
+```{r}
+
+bar <- list(1L, 1.5, "toto", FALSE)
+bar
+```
 
 
