@@ -5,8 +5,8 @@ format: html
 editor: visual
 ---
 
-
 ## Types and classes
+
 ```{r}
 typeof(1.5)
 typeof("toto")
@@ -15,7 +15,8 @@ typeof(1L)
 typeof(typeof)
 typeof(list())
 ```
-defines sets with associated operations. R or Z (integer number in mathematics). Types is the computer representation of this. everything is a double except if you . Characters:sequence of letters. Closure is a specific type for functions: don't excpext to be able to sum the functions between them for example. 
+
+defines sets with associated operations. R or Z (integer number in mathematics). Types is the computer representation of this. everything is a double except if you . Characters:sequence of letters. Closure is a specific type for functions: don't excpext to be able to sum the functions between them for example.
 
 ```{r}
 
