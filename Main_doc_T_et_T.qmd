@@ -151,3 +151,48 @@ bar
 ```
 
 
+```{r}
+typeof(bar)
+length(bar)
+```
+
+```{r}
+foo <- list(c(1,2,3), TRUE, length)
+foo
+length(foo)
+```
+
+### Indexing 
+
+```{r}
+foo
+foo[1]
+foo[-2]
+foo[c(3,2,2,1)]
+```
+
+```{r}
+foo[0]
+```
+
+### Side step: weird values
+```{r}
+NA ## missing value
+NULL ## missing object
+NaN ## Not a number
+```
+
+```{r}
+0/0
+1/0
+-1/0
+1/0-1/0
+```
+
+```{r}
+NA_real_ +1
+1/NA_real_
+```
+
+```{r}
+NULL + 1
