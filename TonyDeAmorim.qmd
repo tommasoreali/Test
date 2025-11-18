@@ -57,3 +57,27 @@ y[3]
 ```
 
 Can think of c() as a creation / vector concatenation function. 
+
+# Stringr package
+
+```{r}
+#having an issue there :
+
+n <- "Luigi"
+length(n)
+
+#this package is our lord and savior
+library(stringr)
+
+str_length(n)
+
+# other thing
+
+s <- "😉😂😊😋😃😋"
+s
+length(s)
+str_length(s)
+
+```
+
+Everything is a vector, reminding that helps understanding every bullshit things R might do. 
