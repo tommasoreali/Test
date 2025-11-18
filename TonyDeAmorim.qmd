@@ -4,3 +4,18 @@ author: "Tony De Amorim"
 format: html
 ---
 
+## Types and classes
+
+```{r}
+typeof(1.5)
+typeof("la vida")
+typeof('same shit')
+typeof(FALSE)
+typeof(1L)
+typeof(1)
+typeof(typeof)
+typeof(list())
+```
+
+
+
